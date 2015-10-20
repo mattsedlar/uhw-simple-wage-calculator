@@ -13,12 +13,11 @@
   </head>
 
    <body>
-    <?php include_once("analytics.php") ?>
 
     <main class="container" id="app-container">
 
     <header>
-      <h1>Kaiser Wage Calculator (2015-17)</h1>
+      <h1>Kaiser Wage Calculator (2015-2017)</h1>
     </header>
 
     <!--
@@ -41,6 +40,8 @@
               </div>
     </form>
 
+        <h4 class="text-center"><b>Annual Gross Wage</b>: <span id="agwage"></span></h4>
+
     <div class="btn btn-lg btn-primary" id="calculate">Calculate</div>
 
     <!-- END CALCULATOR FORM -->
@@ -50,7 +51,7 @@
   <div class="panel panel-default">
 
     <div class="panel-heading">
-      <h2>Additional Pay Over Contract <span class="pull-right">
+      <h2>Additional Pay Over Contract Period <span class="pull-right">
                                 <span class="glyphicon glyphicon-menu-hamburger"></span>
                              </span></h2>
     </div>
@@ -65,24 +66,32 @@
       <tbody>
         <thead>
           <tr>
-            <td><b>Annual Raise</b></td>
-            <td><b>Wage would be</b></td>
-            <td><b>Additonal Wages</b></td>
+            <td><b>Time Period</b></td>
+            <td><b>ATB Increase</b></td>
+            <td><b>New Hourly Wage</b></td>
+            <td><b>New Annual Gross Wages</td>
+            <td><b>Additional Wages</b></td>
           </tr>
         <tr>
-          <td>2015</td>
-          <td id="2015"></td>
-          <td id="add2015"></td>
+            <td>2015</td>
+            <td>3%</td>
+            <td id="2015"></td>
+            <td id="y2015"></td>
+            <td id="add2015"></td>
         </tr>
         <tr>
-          <td>2016</td>
-          <td id="2016"></td>
-          <td id="add2016"></td>
+            <td>2016</td>
+            <td>3%</td>
+            <td id="2016"></td>
+            <td id="y2016"></td>
+            <td id="add2016"></td>
         </tr>
         <tr>
-          <td>2017</td>
-          <td id="2017"></td>
-          <td id="add2017"></td>
+            <td>2017</td>
+            <td>4%</td>
+            <td id="2017"></td>
+            <td id="y2017"></td>
+            <td id="add2017"></td>
         </tr>
     </table>
     </div>

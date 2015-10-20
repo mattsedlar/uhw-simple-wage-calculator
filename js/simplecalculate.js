@@ -51,10 +51,18 @@ $(document).ready(function() {
 
     // Filling in the information
 
+    // annual gross wage
+    $("#agwage").html("$" + commaSeparateNumber(salary.agwage.toFixed(2)));
+
     // adjusted hourly
     $("#2015").html("$" + wages.y2015.toFixed(2));
     $("#2016").html("$" + wages.y2016.toFixed(2));
     $("#2017").html("$" + wages.y2017.toFixed(2));
+
+    // adjusted gross
+    $("#y2015").html("$" + commaSeparateNumber(salary.y2015.toFixed(2)));
+    $("#y2016").html("$" + commaSeparateNumber(salary.y2016.toFixed(2)));
+    $("#y2017").html("$" + commaSeparateNumber(salary.y2017.toFixed(2)));
 
     // addditional wages
     $("#add2015").html("$" + commaSeparateNumber(wages.additional.y2015.toFixed(2)));
